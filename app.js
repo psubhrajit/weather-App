@@ -3,15 +3,15 @@ const hbs = require("hbs");
 const path = require("path");
 const app = express();
 
-const weatherData = require('../utils/weatherData');
+const weatherData = require('./utils/weatherData');
 
 const port = process.env.PORT || 3000
 
-const publicStaticDirPath = path.join(__dirname, '../public')
+const publicStaticDirPath = path.join(__dirname, './public')
 
-const viewsPath = path.join(__dirname, '../templates/views');
+const viewsPath = path.join(__dirname, './templates/views');
 
-const partialsPath = path.join(__dirname, '../templates/partials');
+const partialsPath = path.join(__dirname, './templates/partials');
 
 app.set('view engine', 'hbs');
 app.set('views', viewsPath);
